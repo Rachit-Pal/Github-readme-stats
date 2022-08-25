@@ -61,13 +61,13 @@
 
 # Features
 
-- [GitHub İstatistikler Kartı](#github-istatistikler-kartı)
-- [GitHub Ekstra Pinler](#github-ekstra-pinler)
-- [En Çok Kullanılan Diller](#en-çok-kullanılan-diller)
-- [Wakatime Haftalık İstatistikler](#wakatime-haftalık-istatistikler)
-- [Temalar](#temalar)
-- [Özelleştirmeler](#özelleştirmeler)
-- [Yayınlayın](#yayınlayın)
+-   [GitHub İstatistikler Kartı](#github-istatistikler-kartı)
+-   [GitHub Ekstra Pinler](#github-ekstra-pinler)
+-   [En Çok Kullanılan Diller](#en-çok-kullanılan-diller)
+-   [Wakatime Haftalık İstatistikler](#wakatime-haftalık-istatistikler)
+-   [Temalar](#temalar)
+-   [Özelleştirmeler](#özelleştirmeler)
+-   [Yayınlayın](#yayınlayın)
 
 # GitHub İstatistikler Kartı
 
@@ -78,6 +78,7 @@ Alt kısımdaki kodu Kopyalayın ve yapıştırın. İşte bu kadar. Çok basit!
 ```md
 [![Anurag'nın Github İstatistikleri](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 ```
+
 _Not: Şu sıralamalar mevcut: S+ (en üst 1%), S (en üst 25%), A++ (en üst 45%), A+ (en üst 60%), and B+ (herkes).
 Buradaki değerler [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) ile hesaplanırken; commitler, katkılar, hatalar, yıldızlar, çekme istekleri, takipçiler ve sahip olunan depolar (repository) göz önünde bulundurulamaktadır.
 Uygulamanın yapısı [src/calculateRank.js](./src/calculateRank.js)'te daha detaylı incelenebilir._
@@ -96,7 +97,7 @@ Bazı belirli istatistikleri gizlemek için `?hide=` paremetresi içerisinde vir
 
 Özel (private) olarak geliştirdiğiniz depolardaki commit sayınızı toplam commit sayınız içerisinde göstermek istiyorsanız `?count_private=true` parametresini gönderebilirsiniz.
 
-_Not: Eğer projeyi kendiniz yayınlayıp kullanacaksanız, özel depolardaki geliştirmelerinizin sayısını varsayılan olarak toplam commit sayınız içerisinde gösterilecektir. Aksi taktirde özel depolardaki katkı sayınızı paylaşmayı ayrıca seçmeniz gerekecektir.
+\_Not: Eğer projeyi kendiniz yayınlayıp kullanacaksanız, özel depolardaki geliştirmelerinizin sayısını varsayılan olarak toplam commit sayınız içerisinde gösterilecektir. Aksi taktirde özel depolardaki katkı sayınızı paylaşmayı ayrıca seçmeniz gerekecektir.
 
 > Örnek: `&count_private=true`
 
@@ -132,55 +133,52 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 
 ### Özelleştirmeler
 
-
 `Stats Card` ya da `Repo Card` görüntünüzü istediğiniz gibi şu parametreler ile değiştirebilirsiniz:
 
 #### Yaygın Seçenekler:
 
-- `title_color` - Kart başlığı rengi _(hex color / hex rengi)_
-- `text_color` - İçerik rengi _(hex color / hex rengi)_
-- `icon_color` - Mümkünse ikon rengi _(hex color / hex rengi)_
-- `bg_color` - Kartın arkaplan rengi _(hex color / hex rengi)_ **ya da** gradient şeklinde _açı,başlangıç,bitiş_
-- `hide_border` - Kartın çerçevelerini gizler _(boolean)_
-- `theme` - Temanın rengi [tüm temalar](./themes/README.md)
-- `cache_seconds` - Manuel olarak cache'i belirleyebilirsiniz _(en az: 1800, en fazla: 86400)_
-- `locale` - Karttaki dili seçebilirsiniz _(örneğin; tr, cn, de, es, vb.)_
+-   `title_color` - Kart başlığı rengi _(hex color / hex rengi)_
+-   `text_color` - İçerik rengi _(hex color / hex rengi)_
+-   `icon_color` - Mümkünse ikon rengi _(hex color / hex rengi)_
+-   `bg_color` - Kartın arkaplan rengi _(hex color / hex rengi)_ **ya da** gradient şeklinde _açı,başlangıç,bitiş_
+-   `hide_border` - Kartın çerçevelerini gizler _(boolean)_
+-   `theme` - Temanın rengi [tüm temalar](./themes/README.md)
+-   `cache_seconds` - Manuel olarak cache'i belirleyebilirsiniz _(en az: 1800, en fazla: 86400)_
+-   `locale` - Karttaki dili seçebilirsiniz _(örneğin; tr, cn, de, es, vb.)_
 
 ##### bg_color'da Gradient
 
 bg_color içerisinde birden fazla rengi gradient olarak göstermek için virgülle ayırarak kullanabilirsiniz. Gradient kullanımı için örnek format:
 
-```
-&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-```
+    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
 > Cache Hakkında: Repo kartında fork ve yıldız sayısı 1.000'den küçükse varsayılan cache süresi 4 saat yani 14400 saniyedir. 1.000'den büyükse 2 saat yani 7200 saniyedir. Ayrıca, önbelleğin minimum 2 ve maksimum 24 saate sabitlendiğini unutmayın.
 
 #### İstatistik Karları Exclusive Özellikler:
 
-- `hide` - Spesifik özellikleri istatistiklerden gizleyebilirsiniz.  _(Virgül ile ayırılmış değerlerle)_
-- `hide_title` - _(boolean)_
-- `hide_rank` - _(boolean)_ Sıralamayı gizler ve kartın genişliğini otomatik olarak tekrar düzenler
-- `show_icons` - _(boolean)_
-- `include_all_commits` - _(boolean)_ Sadece bu yılın değil tüm zamanlarda yaptığınız commit sayısını gösterir
-- `count_private` - _(boolean)_ Özel depolarda yaptığınız commitleri gösterir
-- `line_height` - _(number)_ Satır arası yüksekliği belirler
-- `custom_title` - Kart için istediğiniz bir başlığı belirler
-- `disable_animations` - _(boolean)_ Kart içerisindeki tüm animasyonları kapatır
+-   `hide` - Spesifik özellikleri istatistiklerden gizleyebilirsiniz.  _(Virgül ile ayırılmış değerlerle)_
+-   `hide_title` - _(boolean)_
+-   `hide_rank` - _(boolean)_ Sıralamayı gizler ve kartın genişliğini otomatik olarak tekrar düzenler
+-   `show_icons` - _(boolean)_
+-   `include_all_commits` - _(boolean)_ Sadece bu yılın değil tüm zamanlarda yaptığınız commit sayısını gösterir
+-   `count_private` - _(boolean)_ Özel depolarda yaptığınız commitleri gösterir
+-   `line_height` - _(number)_ Satır arası yüksekliği belirler
+-   `custom_title` - Kart için istediğiniz bir başlığı belirler
+-   `disable_animations` - _(boolean)_ Kart içerisindeki tüm animasyonları kapatır
 
 #### Repo Kartları Exclusive Özellikler:
 
-- `show_owner` - _(boolean)_ Reponun sahibinin ismini gösterir
+-   `show_owner` - _(boolean)_ Reponun sahibinin ismini gösterir
 
 #### Dil Kartları Exclusive Özellikler:
 
-- `hide` - Belirli bir dili listede gizler _(Virgül ile ayırılmış değerlerle)_
-- `hide_title` - _(boolean)_
-- `layout` - Uygun olan iki tasarım / layout arasında değişiklik yapar `default` & `compact`
-- `card_width` - Kartın genişliğini manuel olarak belirler _(number)_
-- `langs_count` - 1-10 arasında istediğiniz kadar dil gösterebilirsiniz. Varsayılan: 5 _(number)_
-- `exclude_repo` - Belirli repoları listeden çıkartır _(Virgül ile ayırılmış değerlerle)_
-- `custom_title` - Kart için istediğiniz bir başlığı belirler
+-   `hide` - Belirli bir dili listede gizler _(Virgül ile ayırılmış değerlerle)_
+-   `hide_title` - _(boolean)_
+-   `layout` - Uygun olan iki tasarım / layout arasında değişiklik yapar `default` & `compact`
+-   `card_width` - Kartın genişliğini manuel olarak belirler _(number)_
+-   `langs_count` - 1-10 arasında istediğiniz kadar dil gösterebilirsiniz. Varsayılan: 5 _(number)_
+-   `exclude_repo` - Belirli repoları listeden çıkartır _(Virgül ile ayırılmış değerlerle)_
+-   `custom_title` - Kart için istediğiniz bir başlığı belirler
 
 > :warning: **Önemli:**
 > Dİl isimleri [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)'te belirtildiği üzere uri-escaped olarak belirtilmelidir.
@@ -189,13 +187,13 @@ bg_color içerisinde birden fazla rengi gradient olarak göstermek için virgül
 
 #### Wakatime Kart Exclusive Özellikler:
 
-- `hide_title` - _(boolean)_
-- `line_height` - Satır aralığı yüksekliği _(number)_
-- `hide_progress` - Progresbarı ve yüzdeyi gizler _(boolean)_
-- `custom_title` - Kart için istediğiniz bir başlığı belirler
-- `layout` - Uygun olan iki tasarım / layout arasında değişiklik yapar `default` & `compact`
+-   `hide_title` - _(boolean)_
+-   `line_height` - Satır aralığı yüksekliği _(number)_
+-   `hide_progress` - Progresbarı ve yüzdeyi gizler _(boolean)_
+-   `custom_title` - Kart için istediğiniz bir başlığı belirler
+-   `layout` - Uygun olan iki tasarım / layout arasında değişiklik yapar `default` & `compact`
 
----
+* * *
 
 # GitHub Ekstra Pinler
 
@@ -225,7 +223,7 @@ Endpoint: `api/pin?username=mustafacagri&repo=github-readme-stats`
 
 En çok kullanılan diller kartı kullanıcının en çok kullandığı dilleri gösterir.
 
-_NOTE: En çok kullanılan dillerde yer alan bilgiler sizin yeteneğinizi ve benzeri şeyleri göstermek. Bu, kodlarınızda en çok kullandığınız dilleri gösteren bir Github metriğidir. Ayrıca, github-readme-stats'ın yeni özelliğidir.
+\_NOTE: En çok kullanılan dillerde yer alan bilgiler sizin yeteneğinizi ve benzeri şeyleri göstermek. Bu, kodlarınızda en çok kullandığınız dilleri gösteren bir Github metriğidir. Ayrıca, github-readme-stats'ın yeni özelliğidir.
 
 ### Kullanım
 
@@ -273,7 +271,7 @@ Endpoint: `api/top-langs?username=mustafacagri`
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mustafacagri)](https://github.com/anuraghazra/github-readme-stats)
 
-- Kompakt Düzen / Layout
+-   Kompakt Düzen / Layout
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mustafacagri&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -291,61 +289,61 @@ Endpoint: `api/top-langs?username=mustafacagri`
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
 
-- Kompakt Düzen
+-   Kompakt Düzen
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Tüm Demolar
 
-- Varsayılan
+-   Varsayılan
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- Belirli istatistikler gizli
+-   Belirli istatistikler gizli
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- İkonlar gösteriliyor
+-   İkonlar gösteriliyor
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- Tüm commitler dahil
+-   Tüm commitler dahil
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- Temalar
+-   Temalar
 
 [default themes](#themes) adresinden istediğiniz temayı seçin.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mustafacagri&show_icons=true&theme=radical)
 
-- Gradient
+-   Gradient
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- İstatistik Kartını Düzenleyin
+-   İstatistik Kartını Düzenleyin
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Kartın dilini seçin
+-   Kartın dilini seçin
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&locale=es)
 
-- Repo kartı düzenleyin
+-   Repo kartı düzenleyin
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- En çok kullanılan diller
+-   En çok kullanılan diller
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Wakatime kart
+-   Wakatime kart
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Hızlı İpucu (Repo Kartları Hizlayın)
 
@@ -362,11 +360,9 @@ Genellikle resimleri yan yana düzenleyemezsiniz. Bunu yapmak için şu yaklaş�
 
 ## Kendi Vercel Örneğinizde Yayınlayın
 
-
 #### [@codeSTACKr'ın Yayınladığı Video Eğitimine Göz Atın](https://youtu.be/n6d4KHSKqGk?t=107)
 
 Github API saatte sadece 5.000 isteğe izin verdiği için `https://github-readme-stats.vercel.app/api` adresindeki API'm bu limite muhtemelen takılmış olabilir. Eğer projeyi kendi Vercel sunucunuzda yayınlarsanız, böyle bir sorun yaşamayabilirsiniz. Deploy butonuna tıkla ve deploy başlasın!
-
 
 NOT: [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) geliştirmesi sonrasında anlamadığımız bir şekilde 5.000 istek limitine takılmıyoruz :)
 
@@ -375,22 +371,22 @@ NOT: [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) geliştir
 <details>
  <summary><strong> Vercel Kurulum Rehberi  🔨 </strong></summary>
 
-1. [vercel.com](https://vercel.com/) adresine gidin
-1. `Log in`'e tıklayın
-   ![](https://files.catbox.moe/tct1wg.png)
-1. `Continue with GitHub`'e basarak Github ile giriş yapın
-   ![](https://files.catbox.moe/btd78j.jpeg)
-1. Github'a giriş yapın ve eğer çıkarsa tüm repolara izin verin.
-1. Bu repoyu fork'layın
-1. [Vercel dashboard](https://vercel.com/dashboard)'unuza geri dönün.
-1. `Import Project`'i seçin.
-   ![](https://files.catbox.moe/qckos0.png)
-1. `Import Git Repository`'yi seçin.
-   ![](https://files.catbox.moe/pqub9q.png)
-1. Root'u seçin ve her şeyi olduğu gibi bırakın, [burada](https://github.com/settings/tokens/new) kolayca oluşturabileceğiniz kişisel bir erişim belirteci (personal access token) (PAT) içerecek olan PAT_1 adlı ortam değişkeninizi (gösterildiği gibi) ekleyin. (istediğiniz bir isim verin, çok da mühim değil açıkçası)
-   ![](https://files.catbox.moe/0ez4g7.png)
-1. Deploy'u tıklayın ve hazırsınız. 
-Click deploy, and you're good to go. API'ı kullanmak için alanlarınızı (domainlerinizi) görün!
+1.  [vercel.com](https://vercel.com/) adresine gidin
+2.  `Log in`'e tıklayın
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  `Continue with GitHub`'e basarak Github ile giriş yapın
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  Github'a giriş yapın ve eğer çıkarsa tüm repolara izin verin.
+5.  Bu repoyu fork'layın
+6.  [Vercel dashboard](https://vercel.com/dashboard)'unuza geri dönün.
+7.  `Import Project`'i seçin.
+    ![](https://files.catbox.moe/qckos0.png)
+8.  `Import Git Repository`'yi seçin.
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  Root'u seçin ve her şeyi olduğu gibi bırakın, [burada](https://github.com/settings/tokens/new) kolayca oluşturabileceğiniz kişisel bir erişim belirteci (personal access token) (PAT) içerecek olan PAT_1 adlı ortam değişkeninizi (gösterildiği gibi) ekleyin. (istediğiniz bir isim verin, çok da mühim değil açıkçası)
+    ![](https://files.catbox.moe/0ez4g7.png)
+10. Deploy'u tıklayın ve hazırsınız.
+    Click deploy, and you're good to go. API'ı kullanmak için alanlarınızı (domainlerinizi) görün!
 
 </details>
 
@@ -401,17 +397,16 @@ bu zaman alıyor. Destekleriniz sayesinde bu hizmeti ücretsiz olarak kullanabil
 
 Ayrıca, bu projeyi kullanıyor ve memnunsanız veya sadece bir şeyler yaratmaya devam etmem için beni teşvik etmek istiyorsanız, bunu yapmanın birkaç yolu var: -
 
-- Readme'nizde github-readme-stats'ı kullanırken bu projeye uygun bir link verebilirsiniz.
-- Projeye yıldız verebilir ve paylaşabilirsiniz :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - PayPal ile tek seferlik bağış yapabilirsiniz. Muhtemelen bir ~~kahve~~ ya da çay :tea: alacağım. 
+-   Readme'nizde github-readme-stats'ı kullanırken bu projeye uygun bir link verebilirsiniz.
+-   Projeye yıldız verebilir ve paylaşabilirsiniz :rocket:
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - PayPal ile tek seferlik bağış yapabilirsiniz. Muhtemelen bir ~~kahve~~ ya da çay :tea: alacağım.
 
 Teşekkürler! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](./powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-
-Katkılara açığız! <3
+Katkılara açığız! &lt;3
 
 :heart: ve JavaScript ile hazırlandı.

@@ -59,12 +59,12 @@
 
 # 主な機能
 
-- [GitHub Stats Card](#github-stats-card)
-- [GitHub Extra Pins](#github-extra-pins)
-- [Top Languages Card](#top-languages-card)
-- [Themes](#テーマの変更)
-- [Customization](#テーマを自分でカスタマイズする)
-- [Deploy Yourself](#自分の-Vercel-インスタンスにデプロイする)
+-   [GitHub Stats Card](#github-stats-card)
+-   [GitHub Extra Pins](#github-extra-pins)
+-   [Top Languages Card](#top-languages-card)
+-   [Themes](#テーマの変更)
+-   [Customization](#テーマを自分でカスタマイズする)
+-   [Deploy Yourself](#自分の-Vercel-インスタンスにデプロイする)
 
 # GitHub Stats Card
 
@@ -133,56 +133,54 @@ dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontr
 
 #### 共通のオプション
 
-- `title_color` - タイトルの色 _(16 進数カラーコード)_
-- `text_color` - 中身のテキストの色 _(16 進数カラーコード)_
-- `icon_color` - アイコンの色（変更可能な場合のみ） _(16 進数カラーコード)_
-- `bg_color` - 背景の色 _(16 進数カラーコード)_ **または** _angle,start,end_ の形式でグラデーションを指定することも可
-- `hide_border` - カードの境界線を非表示にします _(ブール値)_
-- `theme` - [使用可能なテーマ一覧](../themes/README.md) から選んだテーマ名
-- `cache_seconds` - キャッシュ時間の秒数 _(最小値: 1800, 最大値: 86400)_
-- `locale` - カードに言語を設定する _(例えば cn, de, es, 等)_
+-   `title_color` - タイトルの色 _(16 進数カラーコード)_
+-   `text_color` - 中身のテキストの色 _(16 進数カラーコード)_
+-   `icon_color` - アイコンの色（変更可能な場合のみ） _(16 進数カラーコード)_
+-   `bg_color` - 背景の色 _(16 進数カラーコード)_ **または** _angle,start,end_ の形式でグラデーションを指定することも可
+-   `hide_border` - カードの境界線を非表示にします _(ブール値)_
+-   `theme` - [使用可能なテーマ一覧](../themes/README.md) から選んだテーマ名
+-   `cache_seconds` - キャッシュ時間の秒数 _(最小値: 1800, 最大値: 86400)_
+-   `locale` - カードに言語を設定する _(例えば cn, de, es, 等)_
 
 ##### bg_color の グラデーション指定
 
 bg_color オプションで複数のカンマ区切りの値を指定してグラデーションをレンダリングすることができます。フォーマットは以下の通りになります。
 
-```
-&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-```
+    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
 > キャッシュに関する注意点: Repo cards のデフォルトのキャッシュは、フォーク数とスター数が 1k 未満の場合は 30 分(1800 秒) で、それ以外の場合は 2 時間(7200) です。また、キャッシュは最低でも 30 分、最大でも 24 時間に制限されていることに注意してください。
 
 #### Stats Card だけに存在するオプション
 
-- `hide` - 特定の統計情報を隠す _(カンマ区切りで指定)_
-- `hide_title` - _(boolean)_
-- `hide_rank` - _(boolean)_
-- `show_icons` - _(boolean)_
-- `include_all_commits` - 今年度のコミット数だけでなく、コミット数の総数をカウントする _(boolean)_
-- `count_private` - プライベートリポジトリへのコミットをカウントする _(boolean)_
-- `line_height` - テキストの行の高さ _(number)_
-- `custom_title` - タイトル文字列を変更する
-- `disable_animations` - カードのアニメーションを無効にする _(boolean)_
+-   `hide` - 特定の統計情報を隠す _(カンマ区切りで指定)_
+-   `hide_title` - _(boolean)_
+-   `hide_rank` - _(boolean)_
+-   `show_icons` - _(boolean)_
+-   `include_all_commits` - 今年度のコミット数だけでなく、コミット数の総数をカウントする _(boolean)_
+-   `count_private` - プライベートリポジトリへのコミットをカウントする _(boolean)_
+-   `line_height` - テキストの行の高さ _(number)_
+-   `custom_title` - タイトル文字列を変更する
+-   `disable_animations` - カードのアニメーションを無効にする _(boolean)_
 
 #### Repo Card だけに存在するオプション
 
-- `show_owner` - リポジトリのオーナーを表示する _(boolean)_
+-   `show_owner` - リポジトリのオーナーを表示する _(boolean)_
 
 #### Language Card だけに存在するオプション
 
-- `hide` - 特定の言語を隠す _(カンマ区切りで指定)_
-- `hide_title` - _(boolean)_
-- `layout` - `default` か `compact` のいずれかのレイアウトに切り替える
-- `card_width` - カードの横幅 _(number)_
-- `langs_count` - 表示される言語の数　_(1 ~ 10, 初期値 5)_
-- `exclude_repo` - 指定されたリポジトリを除外する _(カンマ区切りで指定)_
-- `custom_title` - タイトル文字列を変更する
+-   `hide` - 特定の言語を隠す _(カンマ区切りで指定)_
+-   `hide_title` - _(boolean)_
+-   `layout` - `default` か `compact` のいずれかのレイアウトに切り替える
+-   `card_width` - カードの横幅 _(number)_
+-   `langs_count` - 表示される言語の数　_(1 ~ 10, 初期値 5)_
+-   `exclude_repo` - 指定されたリポジトリを除外する _(カンマ区切りで指定)_
+-   `custom_title` - タイトル文字列を変更する
 
 > :warning: **重要:**
 > [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding) で指定されているように、プログラミング言語の名前は URL エンコードされている必要があります。
 > (例: `c++` は `c%2B%2B`, `jupyter notebook` は `jupyter%20notebook`, など)
 
----
+* * *
 
 # GitHub Extra Pins
 
@@ -244,53 +242,53 @@ _NOTE: Top languages は、ユーザのスキルレベルを示すものでは�
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Compact layout の場合
+-   Compact layout の場合
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### 全てのデモ
 
-- デフォルト
+-   デフォルト
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- 特定の統計情報を隠す
+-   特定の統計情報を隠す
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- アイコンを表示する
+-   アイコンを表示する
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- コミット数の総数をカウントする
+-   コミット数の総数をカウントする
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- テーマの変更
+-   テーマの変更
 
 任意の[テーマ](#themes)を選択できます。
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-- グラデーション
+-   グラデーション
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- stats card のカスタマイズ
+-   stats card のカスタマイズ
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- repo card のカスタマイズ
+-   repo card のカスタマイズ
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Top languages
+-   Top languages
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### クイックヒント (カードを並べる)
 
@@ -318,21 +316,21 @@ NOTE: [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) 以降�
 <details>
  <summary>Vercelの設定ガイド</summary>
 
-1. [vercel.com](https://vercel.com/)に行きます。
-1. `Log in`をクリックします。
-   ![](https://files.catbox.moe/tct1wg.png)
-1. `Continue with GitHub` を押して GitHub にサインインします。
-   ![](https://files.catbox.moe/btd78j.jpeg)
-1. GitHub にサインインし、すべてのリポジトリへのアクセスを許可します。
-1. このリポジトリをフォークします。
-1. [Vercel dashboard](https://vercel.com/dashboard)に戻ります。
-1. `Import Project` を選択します。
-   ![](https://files.catbox.moe/qckos0.png)
-1. `Import Git Repository` を選択します。
-   ![](https://files.catbox.moe/pqub9q.png)
-1. root を選択して、すべてをそのままにしておき、PAT_1 という名前の環境変数を（下図のように）追加します。これには個人アクセストークン (PAT) が含まれており、[ここ](https://github.com/settings/tokens/new)で簡単に作成することができます (すべてをそのままにしておいて、何かに名前を付けてください。)
-   ![](https://files.catbox.moe/0ez4g7.png)
-1. デプロイをクリックすれば完了です。API を使用するためにあなたのドメインを参照してください!
+1.  [vercel.com](https://vercel.com/)に行きます。
+2.  `Log in`をクリックします。
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  `Continue with GitHub` を押して GitHub にサインインします。
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  GitHub にサインインし、すべてのリポジトリへのアクセスを許可します。
+5.  このリポジトリをフォークします。
+6.  [Vercel dashboard](https://vercel.com/dashboard)に戻ります。
+7.  `Import Project` を選択します。
+    ![](https://files.catbox.moe/qckos0.png)
+8.  `Import Git Repository` を選択します。
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  root を選択して、すべてをそのままにしておき、PAT_1 という名前の環境変数を（下図のように）追加します。これには個人アクセストークン (PAT) が含まれており、[ここ](https://github.com/settings/tokens/new)で簡単に作成することができます (すべてをそのままにしておいて、何かに名前を付けてください。)
+    ![](https://files.catbox.moe/0ez4g7.png)
+10. デプロイをクリックすれば完了です。API を使用するためにあなたのドメインを参照してください!
 
 </details>
 
@@ -343,13 +341,13 @@ NOTE: [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) 以降�
 
 しかしながら、もしあなたがこのプロジェクトに満足しているのであれば、あるいはただ、私がソフトウェアを作り続けるよう励ましたいのであれば、いくつかの方法があります。
 
-- あなたの readme で github-readme-stats を使用して適切なクレジットを付与し、それにリンクします :smile:
-- このプロジェクトにスターを贈り、他の人達にもシェアしてください :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - PayPal を介して 1 回限りの寄付を行うことができます。私はおそらく ~~コーヒー~~ お茶を買うでしょう。 :tea:
+-   あなたの readme で github-readme-stats を使用して適切なクレジットを付与し、それにリンクします :smile:
+-   このプロジェクトにスターを贈り、他の人達にもシェアしてください :rocket:
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - PayPal を介して 1 回限りの寄付を行うことができます。私はおそらく ~~コーヒー~~ お茶を買うでしょう。 :tea:
 
 Thanks! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 

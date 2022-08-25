@@ -36,10 +36,10 @@ const createTextNode = ({
     <g class="stagger" style="animation-delay: ${staggerDelay}ms" transform="translate(25, 0)">
       ${iconSvg}
       <text class="stat bold" ${labelOffset} y="12.5">${label}:</text>
-      <text 
-        class="stat" 
-        x="${(showIcons ? 140 : 120) + shiftValuePos}" 
-        y="12.5" 
+      <text
+        class="stat"
+        x="${(showIcons ? 140 : 120) + shiftValuePos}"
+        y="12.5"
         data-testid="${id}"
       >${kValue}</text>
     </g>
@@ -176,7 +176,7 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
   // Conditionally rendered elements
   const rankCircle = hide_rank
     ? ""
-    : `<g data-testid="rank-circle" 
+    : `<g data-testid="rank-circle"
           transform="translate(400, ${height / 2 - 50})">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
@@ -262,7 +262,7 @@ const renderStatsCard = (stats = {}, options = { hide: [] }) => {
     gap: lheight,
     direction: "column",
   }).join("")}
-    </svg> 
+    </svg>
   `);
 };
 

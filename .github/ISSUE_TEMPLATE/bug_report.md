@@ -23,7 +23,7 @@ Add any other context about the problem here.
 Below are some questions that are found in the FAQ. The full FAQ can be found in #1770.
 
 Q: My card displays an error
-Ans: First, check the common error codes (i.e. https://github.com/anuraghazra/github-readme-stats/issues/1772) and existing issues before creating a new one. 
+Ans: First, check the common error codes (i.e. https://github.com/anuraghazra/github-readme-stats/issues/1772) and existing issues before creating a new one.
 
 Q: How to hide jupyter Notebook?
 Ans: &hide=jupyter%20notebook

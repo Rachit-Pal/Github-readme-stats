@@ -59,13 +59,13 @@
 
 # Características
 
-- [Cartão de estatísticas do GitHub](#cartão-de-estatísticas-do-github)
-- [Pins extras do GitHub](#pins-extras-do-github)
-- [Cartão de principais linguagens de programação](#cartão-de-principais-linguagens-de-programação)
-- [Estatística semanal Wakatime](#estatística-semanal-wakatime)
-- [Temas](#temas)
-- [Personalização](#personalização)
-- [Faça suas próprias implantações](#implante-em-sua-própria-instância-do-vercel)
+-   [Cartão de estatísticas do GitHub](#cartão-de-estatísticas-do-github)
+-   [Pins extras do GitHub](#pins-extras-do-github)
+-   [Cartão de principais linguagens de programação](#cartão-de-principais-linguagens-de-programação)
+-   [Estatística semanal Wakatime](#estatística-semanal-wakatime)
+-   [Temas](#temas)
+-   [Personalização](#personalização)
+-   [Faça suas próprias implantações](#implante-em-sua-própria-instância-do-vercel)
 
 # Cartão de estatísticas do GitHub
 
@@ -133,43 +133,43 @@ Personalize a aparência do seu `Stats Card` ou `Repo Card` da maneira que desej
 
 #### Opções comuns
 
-- `title_color` - Cor do título do cartão _(hex color)_
-- `text_color` - Cor de texto do conteúdo _(hex color)_
-- `icon_color` - Cor dos ícones (se disponível) _(hex color)_
-- `bg_color` - Cor de fundo do cartão _(hex color)_
-- `hide_border` - Esconde a borda do cartão _(boleano)_
-- `theme` - Nome do tema, escolha em [todos os temas disponíveis](../themes/README.md)
-- `cache_seconds` - Defina o cabeçalho do cache manualmente _(min: 1800, max: 86400)_
-- `locale` - defina o idioma no cartão _(por exemplo. cn, de, es, etc.)_
+-   `title_color` - Cor do título do cartão _(hex color)_
+-   `text_color` - Cor de texto do conteúdo _(hex color)_
+-   `icon_color` - Cor dos ícones (se disponível) _(hex color)_
+-   `bg_color` - Cor de fundo do cartão _(hex color)_
+-   `hide_border` - Esconde a borda do cartão _(boleano)_
+-   `theme` - Nome do tema, escolha em [todos os temas disponíveis](../themes/README.md)
+-   `cache_seconds` - Defina o cabeçalho do cache manualmente _(min: 1800, max: 86400)_
+-   `locale` - defina o idioma no cartão _(por exemplo. cn, de, es, etc.)_
 
 > Nota sobre o cache: Cartões de repositório tem um cache padrão de 30 minutos (1800 segundos), se o número a contagem de forks e contagem de estrelas é menor que 1 mil o padrão é 2 horas (7200). Note também que o cache é limitado a um mínimo de 30 minutos e um máximo de 24 horas.
 
 #### Opções exclusivas do cartão de estatísticas:
 
-- `hide` - Oculta itens específicos das estatísticas _(Valores separados por vírgulas)_
-- `hide_title` - Ocultar o título _(boolean)_
-- `hide_rank` - Ocultar a classificação _(boolean)_
-- `show_icons` - Mostrar ícones _(boolean)_
-- `include_all_commits` - Contabiliza todos os commits ao invés de apenas os atual ano _(boolean)_
-- `count_private` - Contabiliza commits privados _(boolean)_
-- `line_height` - Define a altura do espaçamento entre o texto _(number)_
+-   `hide` - Oculta itens específicos das estatísticas _(Valores separados por vírgulas)_
+-   `hide_title` - Ocultar o título _(boolean)_
+-   `hide_rank` - Ocultar a classificação _(boolean)_
+-   `show_icons` - Mostrar ícones _(boolean)_
+-   `include_all_commits` - Contabiliza todos os commits ao invés de apenas os atual ano _(boolean)_
+-   `count_private` - Contabiliza commits privados _(boolean)_
+-   `line_height` - Define a altura do espaçamento entre o texto _(number)_
 
 #### Opções exclusivas do cartão de repositórios:
 
-- `show_owner` - Exibir o nome da pessoa a quem o repositório pertence _(boolean)_
+-   `show_owner` - Exibir o nome da pessoa a quem o repositório pertence _(boolean)_
 
 #### Opções exclusivas do cartão de linguagens:
 
-- `hide` - Oculta linguagens específicas _(Valores separados por vírgulas)_
-- `hide_title` - Oculta o título _(boolean)_
-- `layout` - Alterna entre os dois layouts disponíveis `default` & `compact`
-- `card_width` - Define a largura do cartão manualmente _(number)_
+-   `hide` - Oculta linguagens específicas _(Valores separados por vírgulas)_
+-   `hide_title` - Oculta o título _(boolean)_
+-   `layout` - Alterna entre os dois layouts disponíveis `default` & `compact`
+-   `card_width` - Define a largura do cartão manualmente _(number)_
 
 > :warning: **Importante:**
 > Nomes de linguagens devem ser uma sequência escapada de URI, como específicado em [Codificação por cento](https://pt.wikipedia.org/wiki/Codificação_por_cento)
 > (Isso é: `c++` deve se tornar `c%2B%2B`, `jupyter notebook` deve se tornar `jupyter%20notebook`, etc.)
 
----
+* * *
 
 # Pins extras do GitHub
 
@@ -231,7 +231,7 @@ Utilize a opção `&layout=compact` para mudar o layout do cartão.
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Layout compacto
+-   Layout compacto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -249,47 +249,45 @@ Altere o valor de `?username=` para o seu username do Wakatime.
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
 
----
-
-
+* * *
 
 ### Todas as demonstrações
 
-- Padronizado
+-   Padronizado
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- Ocultando estatísticas específicas
+-   Ocultando estatísticas específicas
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- Mostrando ícones
+-   Mostrando ícones
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- Incluir todos os commits
+-   Incluir todos os commits
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- Temas
+-   Temas
 
 Escolha entre um dos [temas predefinidos](#temas)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-- Personalizando o cartão de estatísticas
+-   Personalizando o cartão de estatísticas
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Customizando o cartão de repositório
+-   Customizando o cartão de repositório
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Principais linguagens
+-   Principais linguagens
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Dica (Alinhandos os cartões de repositório)
 
@@ -317,21 +315,21 @@ Nota: Desde [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) h�
 <details>
  <summary>Guia de configuração do Vercel</summary>
 
-1. Acesse [vercel.com](https://vercel.com/)
-1. Clique em `Login`
-   ![](https://files.catbox.moe/tct1wg.png)
-1. Acesse com o GitHub clicando em `Continue with GitHub`
-   ![](https://files.catbox.moe/btd78j.jpeg)
-1. Entre no GitHub e permita acesso a todos os repositórios, se solicitado
-1. Faça Fork neste repositório
-1. Volte ao seu [painel principal do Vercel](https://vercel.com/dashboard)
-1. Selecione `Import Project`
-   ![](https://files.catbox.moe/qckos0.png)
-1. Selecione `Import Git Repository`
-   ![](https://files.catbox.moe/pqub9q.png)
-1. Selecione a raiz e mantenha tudo como está, basta adicionar sua variável de ambiente chamada PAT_1 (que será exibida), que conterá um token de acesso pessoal (PAT), que você pode criar facilmente [aqui](https://github.com/settings/tokens/new) (deixe tudo como está, apenas dê um nome, que pode ser o que você quiser)
-   ![](https://files.catbox.moe/0ez4g7.png)
-1. Clique em `deploy` e já estará tudo pronto. Veja seus domínios para usar a API!
+1.  Acesse [vercel.com](https://vercel.com/)
+2.  Clique em `Login`
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  Acesse com o GitHub clicando em `Continue with GitHub`
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  Entre no GitHub e permita acesso a todos os repositórios, se solicitado
+5.  Faça Fork neste repositório
+6.  Volte ao seu [painel principal do Vercel](https://vercel.com/dashboard)
+7.  Selecione `Import Project`
+    ![](https://files.catbox.moe/qckos0.png)
+8.  Selecione `Import Git Repository`
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  Selecione a raiz e mantenha tudo como está, basta adicionar sua variável de ambiente chamada PAT_1 (que será exibida), que conterá um token de acesso pessoal (PAT), que você pode criar facilmente [aqui](https://github.com/settings/tokens/new) (deixe tudo como está, apenas dê um nome, que pode ser o que você quiser)
+    ![](https://files.catbox.moe/0ez4g7.png)
+10. Clique em `deploy` e já estará tudo pronto. Veja seus domínios para usar a API!
 
 </details>
 
@@ -342,16 +340,16 @@ isso demanda tempo. Utilize este serviço gratuitamente.
 
 No entanto, se você utilizar este projeto e estiver satisfeito com ele, ou apenas quiser me encorajar a continuar criando coisas, existem algumas formas fazê-lo:
 
-- Dando os devidos créditos ao usar github-readme-stats no seu README.me, adicionando uma referência ao projeto :D
-- Dando uma estrela (Starring) e compartilhando o projeto 🚀
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Você pode fazer doações únicas via PayPal. Provavelmente vou comprar um ~~café~~ chá. :tea:
+-   Dando os devidos créditos ao usar github-readme-stats no seu README.me, adicionando uma referência ao projeto :D
+-   Dando uma estrela (Starring) e compartilhando o projeto 🚀
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Você pode fazer doações únicas via PayPal. Provavelmente vou comprar um ~~café~~ chá. :tea:
 
 Obrigado! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-Contribuições são bem-vindas! <3
+Contribuições são bem-vindas! &lt;3
 
 Feito com :heart: e JavaScript.

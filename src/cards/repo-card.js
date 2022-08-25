@@ -67,8 +67,8 @@ const iconWithLabel = (icon, label, testid) => {
 };
 
 /**
- * @param {import('../fetchers/types').RepositoryData} repo 
- * @param {Partial<import("./types").RepoCardOptions>} options 
+ * @param {import('../fetchers/types').RepositoryData} repo
+ * @param {Partial<import("./types").RepoCardOptions>} options
  * @returns {string}
  */
 const renderRepoCard = (repo, options = {}) => {

@@ -62,13 +62,13 @@
 
 # Características
 
-- [Tarjeta de estadísticas de GitHub](#tarjeta-de-estadísticas-de-github)
-- [Pins adicionales de GitHub](#pines-adicionales-de-github)
-- [Tarjeta de Lenguajes Principales](#tarjeta-de-lenguajes-principales)
-- [Wakatime Week Stats](#estadísticas-de-la-semana-de-wakatime)
-- [Temas](#temas)
-- [Personalización](#personalización)
-- [Despliega por tu cuenta](#despliega-tu-propia-instancia-de-vercel)
+-   [Tarjeta de estadísticas de GitHub](#tarjeta-de-estadísticas-de-github)
+-   [Pins adicionales de GitHub](#pines-adicionales-de-github)
+-   [Tarjeta de Lenguajes Principales](#tarjeta-de-lenguajes-principales)
+-   [Wakatime Week Stats](#estadísticas-de-la-semana-de-wakatime)
+-   [Temas](#temas)
+-   [Personalización](#personalización)
+-   [Despliega por tu cuenta](#despliega-tu-propia-instancia-de-vercel)
 
 # Tarjeta de estadísticas de GitHub
 
@@ -136,50 +136,48 @@ Puedes personalizar el aspecto de tu `Tarjeta de Estadísticas` o `Tarjeta de Re
 
 #### Opciones Comunes:
 
-- `title_color` - Color del título _(hex color)_
-- `text_color` - Color del contenido _(hex color)_
-- `icon_color` - Color de icono si esta disponible _(hex color)_
-- `bg_color` - Color de fondo _(hex color)_
-- `hide_border` - Oculta el borde de la tarjeta _(booleano)_
-- `theme` - Nombre del tema, elige uno de [todos los temas disponible ](../themes/README.md)
-- `cache_seconds` - Cache _(min: 1800, max: 86400)_
-- `locale` - configurar el idioma en la tarjeta _(p.ej. cn, de, es, etc.)_
+-   `title_color` - Color del título _(hex color)_
+-   `text_color` - Color del contenido _(hex color)_
+-   `icon_color` - Color de icono si esta disponible _(hex color)_
+-   `bg_color` - Color de fondo _(hex color)_
+-   `hide_border` - Oculta el borde de la tarjeta _(booleano)_
+-   `theme` - Nombre del tema, elige uno de [todos los temas disponible ](../themes/README.md)
+-   `cache_seconds` - Cache _(min: 1800, max: 86400)_
+-   `locale` - configurar el idioma en la tarjeta _(p.ej. cn, de, es, etc.)_
 
 ##### Gradiente en `bg_color`
 
 Puedes pasar mútliples valores separados por coma en la opción `bg_color` para dibujar un gradiente, el formato del gradiente es:
 
-```
-&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-```
+    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
 > Nota sobre la caché: las tarjetas de Repo tienen un caché predeterminado de 4 horas (14400 segundos) si el recuento forks y el recuento de estrellas es inferior a 1k; de lo contrario, son 2 horas (7200 segundos). También ten en cuenta que la caché está sujeta a un mínimo de 2 horas y un máximo de 24 horas
 
 #### Opciones exclusivas de la Tarjeta de Estadísticas:
 
-- `hide` - Oculta de las estadísticas [los elementos especificados](#ocultar-estadísticas-individualmente) _(valores separados por comas)_
-- `hide_title` - _(booleano)_
-- `hide_rank` - _(booleano)_
-- `show_icons` - _(booleano)_
-- `include_all_commits` - Cuenta el total de commits en lugar de solo los commits del año actual _(boolean)_
-- `count_private` - Cuenta los commits privadas _(boolean)_
-- `line_height` - Establece el alto de línea entre texto _(número)_
-- `custom_title` - Establece un título personalizado
-- [`disable_animations`] - Desactiva todas las animaciones _(booleano)_
+-   `hide` - Oculta de las estadísticas [los elementos especificados](#ocultar-estadísticas-individualmente) _(valores separados por comas)_
+-   `hide_title` - _(booleano)_
+-   `hide_rank` - _(booleano)_
+-   `show_icons` - _(booleano)_
+-   `include_all_commits` - Cuenta el total de commits en lugar de solo los commits del año actual _(boolean)_
+-   `count_private` - Cuenta los commits privadas _(boolean)_
+-   `line_height` - Establece el alto de línea entre texto _(número)_
+-   `custom_title` - Establece un título personalizado
+-   [`disable_animations`] - Desactiva todas las animaciones _(booleano)_
 
 #### Opciones exclusivas de la Tarjeta de Repo:
 
-- `show_owner` - Mostrar el nombre del propietario del repositorio _(booleano)_
+-   `show_owner` - Mostrar el nombre del propietario del repositorio _(booleano)_
 
 #### Opciones exclusivas de la Tarjeta de Lenguajes:
 
-- `hide` - Oculta de la tarjeta los lenguajes especificados  _(valores separados por comas)_
-- `hide_title` - _(booleano)_
-- `layout` - Cambia entre los dos diseños disponibles `default` & `compact`
-- `card_width` - Establece el ancho de la tarjeta manualmente _(número)_
-- `langs_count` - Muestra más lenguajes en la tarjeta, entre 1-10, por defecto 5 _(número)_
-- `exclude_repo` - Excluye los repositorios especificados  _(valores separados por comas)_
-- `custom_title` - Establece un título personalizado
+-   `hide` - Oculta de la tarjeta los lenguajes especificados  _(valores separados por comas)_
+-   `hide_title` - _(booleano)_
+-   `layout` - Cambia entre los dos diseños disponibles `default` & `compact`
+-   `card_width` - Establece el ancho de la tarjeta manualmente _(número)_
+-   `langs_count` - Muestra más lenguajes en la tarjeta, entre 1-10, por defecto 5 _(número)_
+-   `exclude_repo` - Excluye los repositorios especificados  _(valores separados por comas)_
+-   `custom_title` - Establece un título personalizado
 
 > :warning: **Importante:**
 > Los nombres de los lenguajes deben estar codificados para URLs, como se especifica en [Código porciento](https://es.wikipedia.org/wiki/C%C3%B3digo_porciento)
@@ -187,15 +185,15 @@ Puedes pasar mútliples valores separados por coma en la opción `bg_color` para
 
 #### Opciones exclusivas de la Tarjeta de Wakatime:
 
-- `hide_title` - _(booleano)_
-- `line_height` - Establece el alto de línea entre texto _(número)_
-- `hide_progress` - Oculta la barra de progreso y el porcentaje _(booleano)_
-- `custom_title` - Establece un título personalizado
-- `layout` - Cambia entre los dos diseños disponibles `default` & `compact`
-- `langs_count` - Limita el número de idiomas que aparecen en el mapa
-- `api_domain` - Establece un dominio de API personalizado para la tarjeta
+-   `hide_title` - _(booleano)_
+-   `line_height` - Establece el alto de línea entre texto _(número)_
+-   `hide_progress` - Oculta la barra de progreso y el porcentaje _(booleano)_
+-   `custom_title` - Establece un título personalizado
+-   `layout` - Cambia entre los dos diseños disponibles `default` & `compact`
+-   `langs_count` - Limita el número de idiomas que aparecen en el mapa
+-   `api_domain` - Establece un dominio de API personalizado para la tarjeta
 
----
+* * *
 
 # Pines adicionales de GitHub
 
@@ -273,7 +271,7 @@ Puedes usar la opción `& layout = compact` para cambiar el diseño de la tarjet
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Diseño compacto
+-   Diseño compacto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -291,61 +289,61 @@ cambia el valor del parámetro `?username=` a tu username en [Wakatime](https://
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/anuraghazra/github-readme-stats)
 
-- Diseño compacto
+-   Diseño compacto
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Todos los ejemplos
 
-- Por defecto
+-   Por defecto
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- Ocultando ciertas estadísticas
+-   Ocultando ciertas estadísticas
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- Mostrando íconos
+-   Mostrando íconos
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- Incluyendo todos los commits
+-   Incluyendo todos los commits
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- Temas
+-   Temas
 
 Escoja cualquiera de los [temas por defecto](#themes)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-- Gradiente
+-   Gradiente
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- Personalizando Tarjeta de Estadísticas
+-   Personalizando Tarjeta de Estadísticas
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Estableciendo Idioma de la tarjeta
+-   Estableciendo Idioma de la tarjeta
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&locale=es)
 
-- Personalizando Tarjeta de Repo
+-   Personalizando Tarjeta de Repo
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Lenguajes Top
+-   Lenguajes Top
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Tarjeta de Wakatime
+-   Tarjeta de Wakatime
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Consejo rápido (para alinear las tarjetas de repositorio)
 
@@ -373,20 +371,20 @@ NOTA: Debido a [#58](https://github.com/anuraghazra/github-readme-stats/pull/58)
 <details>
  <summary>Guía para comenzar en Vercel</summary>
 
-1. Ve a [vercel.com](https://vercel.com/)
-2. Clickea en `Log in`
-   ![](https://files.catbox.moe/tct1wg.png)
-3. Inicia sesión con GitHub presionando `Continue with GitHub`
-   ![](https://files.catbox.moe/btd78j.jpeg)
-4. Permite el acceso a todos los repositorios (si se te pregunta)
-5. Haz un Fork de este repositorio
-6. Dirígete de nuevo a tu [Vercel dashboard](https://vercel.com/dashboard)
-7. Selecciona `Import Project`
-   ![](https://files.catbox.moe/qckos0.png)
-8. Selecciona `Import Git Repository`
-   ![](https://files.catbox.moe/pqub9q.png)
-9. Selecciona "root" y matén todo como está, simplemente añade tu variable de entorno llamada PAT_1 (como se muestra), la cual contendrá un token de acceso personal (PAT), el cual puedes crear fácilmente [aquí](https://github.com/settings/tokens/new) (mantén todo como está, simplemente asígnale un nombre, puede ser cualquiera que desees)
-   ![](https://files.catbox.moe/0ez4g7.png)
+1.  Ve a [vercel.com](https://vercel.com/)
+2.  Clickea en `Log in`
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  Inicia sesión con GitHub presionando `Continue with GitHub`
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  Permite el acceso a todos los repositorios (si se te pregunta)
+5.  Haz un Fork de este repositorio
+6.  Dirígete de nuevo a tu [Vercel dashboard](https://vercel.com/dashboard)
+7.  Selecciona `Import Project`
+    ![](https://files.catbox.moe/qckos0.png)
+8.  Selecciona `Import Git Repository`
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  Selecciona "root" y matén todo como está, simplemente añade tu variable de entorno llamada PAT_1 (como se muestra), la cual contendrá un token de acceso personal (PAT), el cual puedes crear fácilmente [aquí](https://github.com/settings/tokens/new) (mantén todo como está, simplemente asígnale un nombre, puede ser cualquiera que desees)
+    ![](https://files.catbox.moe/0ez4g7.png)
 10. Clickea "Deploy" y ya está listo. ¡Ve tus dominios para usar la API!
 
 </details>
@@ -397,16 +395,16 @@ Casi todos mis proyectos son de código abierto e intento responder a todos los 
 
 No obstante, si estás utilizando este proyecto y estás feliz con él o simplemente quieres animarme a que siga creando cosas, aquí tienes algunas maneras de hacerlo:
 
-- Darme créditos cuando estés utilizando github-readme-stats en tu README, añadiendo un link a este repositorio :D
-- Dándole una estrella y compartiendo el proyecto :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Puedes hacerme una única donación a través de PayPal. Probablemente me compraré un ~~café~~ té. :tea:
+-   Darme créditos cuando estés utilizando github-readme-stats en tu README, añadiendo un link a este repositorio :D
+-   Dándole una estrella y compartiendo el proyecto :rocket:
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Puedes hacerme una única donación a través de PayPal. Probablemente me compraré un ~~café~~ té. :tea:
 
 ¡Gracias! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-¡Las contribuciones son bienvenidas! <3
+¡Las contribuciones son bienvenidas! &lt;3
 
 Hecho con :heart: y JavaScript.

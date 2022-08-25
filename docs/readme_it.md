@@ -59,12 +59,12 @@
 
 # Caratteristiche
 
-- [Statistiche GitHub (GitHub Stats Card)](#github-stats-card)
-- [GitHub Extra Pin](#github-extra-pins)
-- [Linguaggi più usati (Top Languages Card)](#top-languages-card)
-- [Temi](#temi)
-- [Personalizzazione](#personalizzazione)
-- [Effettua il Deploy](#deploy-su-vercel)
+-   [Statistiche GitHub (GitHub Stats Card)](#github-stats-card)
+-   [GitHub Extra Pin](#github-extra-pins)
+-   [Linguaggi più usati (Top Languages Card)](#top-languages-card)
+-   [Temi](#temi)
+-   [Personalizzazione](#personalizzazione)
+-   [Effettua il Deploy](#deploy-su-vercel)
 
 # GitHub Stats Card
 
@@ -132,51 +132,49 @@ Puoi personalizzare l'aspetto delle tue `Stats Card` o delle `Repo Card` in qual
 
 #### Opzioni comuni:
 
-- `title_color` - Colore del titolo _(in esadecimale)_
-- `text_color` - Colore del testo _(in esadecimale)_
-- `icon_color` - Colore delle icone, se disponibili _(in esadecimale)_
-- `bg_color` - Colore dello sfondo _(in esadecimale)_ **oppure** un gradiente nella forma _angolo,inizio,fine_
-- `hide_border` - Nasconde il bordo della carta _(booleano)_
-- `theme` - Nome del tema, dai un'occhiata a [tutti i temi disponibili](../themes/README.md)
-- `cache_seconds` - Specifica manualmente il valore di cache, in secondi _(min: 1800, max: 86400)_
-- `locale` - Impostare la lingua nella scheda _(per esempio. cn, de, es, eccetera.)_
+-   `title_color` - Colore del titolo _(in esadecimale)_
+-   `text_color` - Colore del testo _(in esadecimale)_
+-   `icon_color` - Colore delle icone, se disponibili _(in esadecimale)_
+-   `bg_color` - Colore dello sfondo _(in esadecimale)_ **oppure** un gradiente nella forma _angolo,inizio,fine_
+-   `hide_border` - Nasconde il bordo della carta _(booleano)_
+-   `theme` - Nome del tema, dai un'occhiata a [tutti i temi disponibili](../themes/README.md)
+-   `cache_seconds` - Specifica manualmente il valore di cache, in secondi _(min: 1800, max: 86400)_
+-   `locale` - Impostare la lingua nella scheda _(per esempio. cn, de, es, eccetera.)_
 
 ##### Gradiente nello sfondo
 
 Puoi fornire valori separati da virgola nel parametro bg_color per creare un gradiente, il cui formato è:-
 
-```
-&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-```
+    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
 > Nota sulla cache: le card hanno un valore di cache di 4 ore (14400 seconds) di default se il numero di fork & il numero di stelle è inferiore a 1000; altrimenti è pari a 2 ore (7200).
 
 #### Opzioni valide solo per le card delle statistiche:
 
-- `hide` - Nasconde gli oggetti selezionati _(valori separati da virgola)_
-- `hide_title` - Nasconde il titolo _(booleano)_
-- `hide_rank` - Nasconde il punteggio _(booleano)_
-- `show_icons` - Mostra le icone _(booleano)_
-- `include_all_commits` - Mostra tutti i commit e non solo quelli dell'anno corrente _(booleano)_
-- `count_private` - Include i contributi privati _(booleano)_
-- `line_height` - Specifica il valore dell'altezza di riga _(numero)_
+-   `hide` - Nasconde gli oggetti selezionati _(valori separati da virgola)_
+-   `hide_title` - Nasconde il titolo _(booleano)_
+-   `hide_rank` - Nasconde il punteggio _(booleano)_
+-   `show_icons` - Mostra le icone _(booleano)_
+-   `include_all_commits` - Mostra tutti i commit e non solo quelli dell'anno corrente _(booleano)_
+-   `count_private` - Include i contributi privati _(booleano)_
+-   `line_height` - Specifica il valore dell'altezza di riga _(numero)_
 
 #### Opzioni valide solo per le Repo Card:
 
-- `show_owner` - Mostra il nome utente del proprietario _(booleano)_
+-   `show_owner` - Mostra il nome utente del proprietario _(booleano)_
 
 #### Opzioni valide solo per le card dei linguaggi:
 
-- `hide` - Nasconde un linguaggio specifico _(valori separati da virgola)_
-- `hide_title` - Nasconde il titolo _(booleano)_
-- `layout` - Specifica il tipo di layout, `default` (esteso) o `compact` (compatto)
-- `card_width` - Specifica il valore della larghezza _(numero)_
+-   `hide` - Nasconde un linguaggio specifico _(valori separati da virgola)_
+-   `hide_title` - Nasconde il titolo _(booleano)_
+-   `layout` - Specifica il tipo di layout, `default` (esteso) o `compact` (compatto)
+-   `card_width` - Specifica il valore della larghezza _(numero)_
 
 > :warning: **Importante:**
 > Per i nomi dei linguaggi, assicurati di effettuare l'encoding giusto nell'uri, come specificato in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
 > (ad esempio: `c++` diventa `c%2B%2B`, `jupyter notebook` diventa `jupyter%20notebook`, ecc.)
 
----
+* * *
 
 # GitHub Extra Pins
 
@@ -236,53 +234,53 @@ Puoi utilizzare l'opzione `&layout=compact` per cambiare l'aspetto della card.
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Layout Compatto
+-   Layout Compatto
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Galleria di esempi
 
-- Default
+-   Default
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- Nascondere dati specifici
+-   Nascondere dati specifici
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- Mostrare le icone
+-   Mostrare le icone
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- Includere tutti i commit
+-   Includere tutti i commit
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- Temi
+-   Temi
 
 Scegli uno dei [temi di default](#themes)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-- Gradiente
+-   Gradiente
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- Personalizzare le Stats Card
+-   Personalizzare le Stats Card
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Personalizzare le Repo Card
+-   Personalizzare le Repo Card
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Linguaggi più usati
+-   Linguaggi più usati
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Consiglio veloce (Allineare le Card)
 
@@ -310,21 +308,21 @@ NOTE: Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) we
 <details>
  <summary><b> Guide on setting up Vercel  🔨 </b></summary>
 
-1. Go to [vercel.com](https://vercel.com/)
-1. Click on `Log in`
-   ![](https://files.catbox.moe/tct1wg.png)
-1. Sign in with GitHub by pressing `Continue with GitHub`
-   ![](https://files.catbox.moe/btd78j.jpeg)
-1. Sign into GitHub and allow access to all repositories, if prompted
-1. Fork this repo
-1. Go back to your [Vercel dashboard](https://vercel.com/dashboard)
-1. Select `Import Project`
-   ![](https://files.catbox.moe/qckos0.png)
-1. Select `Import Git Repository`
-   ![](https://files.catbox.moe/pqub9q.png)
-1. Select root and keep everything as is, just add your environment variable named PAT_1 (as shown), which will contain a personal access token (PAT), which you can easily create [here](https://github.com/settings/tokens/new) (leave everything as is, just name it something, it can be anything you want)
-   ![](https://files.catbox.moe/0ez4g7.png)
-1. Click deploy, and you're good to go. See your domains to use the API!
+1.  Go to [vercel.com](https://vercel.com/)
+2.  Click on `Log in`
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  Sign in with GitHub by pressing `Continue with GitHub`
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  Sign into GitHub and allow access to all repositories, if prompted
+5.  Fork this repo
+6.  Go back to your [Vercel dashboard](https://vercel.com/dashboard)
+7.  Select `Import Project`
+    ![](https://files.catbox.moe/qckos0.png)
+8.  Select `Import Git Repository`
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  Select root and keep everything as is, just add your environment variable named PAT_1 (as shown), which will contain a personal access token (PAT), which you can easily create [here](https://github.com/settings/tokens/new) (leave everything as is, just name it something, it can be anything you want)
+    ![](https://files.catbox.moe/0ez4g7.png)
+10. Click deploy, and you're good to go. See your domains to use the API!
 
 </details>
 
@@ -335,16 +333,16 @@ Puoi utilizzare questo servizio gratuitamente.
 
 Tuttavia, se usi il progetto e ti piace e vuoi sostenermi, puoi:-
 
-- Dare il giusto riconoscimento quando usi github-readme-stats nei tuoi readme, includendo un link :D
-- Mettere una stella e condividere il progetto :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Fare una donazione via PayPal. Probabilmente compreròun ~~caffè~~ tè. :tea:
+-   Dare il giusto riconoscimento quando usi github-readme-stats nei tuoi readme, includendo un link :D
+-   Mettere una stella e condividere il progetto :rocket:
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Fare una donazione via PayPal. Probabilmente compreròun ~~caffè~~ tè. :tea:
 
 Grazie! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-I contributi sono benvenuti! <3
+I contributi sono benvenuti! &lt;3
 
 Realizzato col :heart: e in JavaScript.

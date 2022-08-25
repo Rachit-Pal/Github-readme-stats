@@ -59,12 +59,12 @@
 
 # Features
 
-- [Carte des stats GitHub](#carte-des-stats-github)
-- [GitHub Extra Pins](#github-extra-pins)
-- [Carte des meilleurs langages](#carte-des-langages-les--utilisés)
-- [Themes](#thèmes)
-- [Personnalisation](#personnalisation)
-- [Deployer toi-même](#déployer-sur-votre-propre-instance-vercel)
+-   [Carte des stats GitHub](#carte-des-stats-github)
+-   [GitHub Extra Pins](#github-extra-pins)
+-   [Carte des meilleurs langages](#carte-des-langages-les--utilisés)
+-   [Themes](#thèmes)
+-   [Personnalisation](#personnalisation)
+-   [Deployer toi-même](#déployer-sur-votre-propre-instance-vercel)
 
 # Carte des Stats GitHub
 
@@ -132,22 +132,20 @@ Vous pouvez personnaliser l'apparence de votre `Carte des stats` ou `Carte de d�
 
 #### Options principales:
 
-- `title_color` - Couleur du titre de la carte _(hex color)_
-- `text_color` - Couleur du texte _(hex color)_
-- `icon_color` - Couleur des icônes si disponibles _(hex color)_
-- `bg_color` - Couleur du fond de la carte _(hex color)_ **ou** un gradiant de la forme _angle,start,end_
-- `hide_border` - Cache la bordure de la carte _(booléen)_
-- `theme` - Nom du thème, parmis [tous les thèmes disponibles](../themes/README.md)
-- `cache_seconds` - Paramétrer le cache manuellement _(min: 1800, max: 86400)_
-- `locale` - définir la langue de la carte _(par exemple. cn, de, es, etc.)_
+-   `title_color` - Couleur du titre de la carte _(hex color)_
+-   `text_color` - Couleur du texte _(hex color)_
+-   `icon_color` - Couleur des icônes si disponibles _(hex color)_
+-   `bg_color` - Couleur du fond de la carte _(hex color)_ **ou** un gradiant de la forme _angle,start,end_
+-   `hide_border` - Cache la bordure de la carte _(booléen)_
+-   `theme` - Nom du thème, parmis [tous les thèmes disponibles](../themes/README.md)
+-   `cache_seconds` - Paramétrer le cache manuellement _(min: 1800, max: 86400)_
+-   `locale` - définir la langue de la carte _(par exemple. cn, de, es, etc.)_
 
 ##### Gradient in bg_color
 
 Vous pouvez fournir plusieurs valeurs (suivie d'une virgule) dans l'option bg_color pour rendre un degradé, le format du degradé est :-
 
-```
-&bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
-```
+    &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 
 > Note relative: Les cartes dépôt ont un cache par défaut de 30 minutes (1800 secondes) si le nombre de bifurcations et d'étoiles est inférieur à 1K, alors il est de 2 heures (7200). Notez également que la mémoire cache est limitée à 30 minutes au minimum et à 24 heures au maximum.
 
@@ -176,7 +174,7 @@ Vous pouvez fournir plusieurs valeurs (suivie d'une virgule) dans l'option bg_co
 > Les noms des langages doivent être en format uri, comme spécifié dans [Percent Encoding](https://fr.wikipedia.org/wiki/Percent-encoding)
 > (c'est-à-dire que: `c++` devrait devenir `c%2B%2B`, `jupyter notebook` devrait devenir `jupyter%20notebook`, etc.)
 
----
+* * *
 
 # GitHub Extra Pins
 
@@ -238,53 +236,53 @@ Vous pouvez utiliser l'option `&layout=compact` pour changer le style de la cart
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-- Carte compacte
+-   Carte compacte
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Toutes les démos
 
-- Défaut
+-   Défaut
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
 
-- Ne pas afficher des stats spécifiques
+-   Ne pas afficher des stats spécifiques
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,issues)
 
-- Afficher les icônes
+-   Afficher les icônes
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=issues&show_icons=true)
 
-- Inclure tous les commits
+-   Inclure tous les commits
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&include_all_commits=true)
 
-- Thèmes
+-   Thèmes
 
 Choisissez parmi l'un des [thèmes par défaut](#themes)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
 
-- Dégradé
+-   Dégradé
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- Personnaliser la carte des stats
+-   Personnaliser la carte des stats
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Personnaliser la carte dépôt
+-   Personnaliser la carte dépôt
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Top Langages
+-   Top Langages
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
----
+* * *
 
 ### Conseil rapide (aligner les cartes des dépôts)
 
@@ -312,21 +310,21 @@ NOTE: Depuis [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) n
 <details>
  <summary><b> Guide pour la mise en place de Vercel  🔨 </b></summary>
 
-1. Allez sur [vercel.com](https://vercel.com/)
-1. Cliquez sur `Log in`
-   ![](https://files.catbox.moe/tct1wg.png)
-1. Connectez-vous avec GitHub en cliquant `Continue with GitHub`
-   ![](https://files.catbox.moe/btd78j.jpeg)
-1. Connectez-vous à GitHub et autorisez l'accès à tous les dépôts, si vous y êtes invité
-1. Forkez ce dépôt
-1. Retournez au [dashboard Vercel](https://vercel.com/dashboard)
-1. Sélectionnez `Import Project`
-   ![](https://files.catbox.moe/qckos0.png)
-1. Sélectionnez `Import Git Repository`
-   ![](https://files.catbox.moe/pqub9q.png)
-1. Choisissez root et gardez tout tel quel, ajoutez simplement votre variable d'environnement nommée PAT_1 (comme indiqué), qui contiendra un jeton d'accès personnel (PAT), que vous pouvez facilement créer [ici](https://github.com/settings/tokens/new) (laissez tout tel quel, nommez le simplement quelque chose, cela peut être tout ce que vous voulez)
-   ![](https://files.catbox.moe/0ez4g7.png)
-1. Cliquez sur "Deploy" et vous êtes prêt à partir. Regardez vos domaines pour utiliser l'API !
+1.  Allez sur [vercel.com](https://vercel.com/)
+2.  Cliquez sur `Log in`
+    ![](https://files.catbox.moe/tct1wg.png)
+3.  Connectez-vous avec GitHub en cliquant `Continue with GitHub`
+    ![](https://files.catbox.moe/btd78j.jpeg)
+4.  Connectez-vous à GitHub et autorisez l'accès à tous les dépôts, si vous y êtes invité
+5.  Forkez ce dépôt
+6.  Retournez au [dashboard Vercel](https://vercel.com/dashboard)
+7.  Sélectionnez `Import Project`
+    ![](https://files.catbox.moe/qckos0.png)
+8.  Sélectionnez `Import Git Repository`
+    ![](https://files.catbox.moe/pqub9q.png)
+9.  Choisissez root et gardez tout tel quel, ajoutez simplement votre variable d'environnement nommée PAT_1 (comme indiqué), qui contiendra un jeton d'accès personnel (PAT), que vous pouvez facilement créer [ici](https://github.com/settings/tokens/new) (laissez tout tel quel, nommez le simplement quelque chose, cela peut être tout ce que vous voulez)
+    ![](https://files.catbox.moe/0ez4g7.png)
+10. Cliquez sur "Deploy" et vous êtes prêt à partir. Regardez vos domaines pour utiliser l'API !
 
 </details>
 
@@ -336,17 +334,16 @@ Je mets open-source presque tout ce que je peux, et j'essaie de répondre à tou
 
 Cependant, si vous utilisez ce projet et que vous en êtes satisfait ou si vous voulez simplement m'encourager à continuer à créer, il y a quelques façons de le faire :-
 
-- Donner un crédit approprié lorsque vous utilisez github-readme-stats sur votre readme, avec un lien vers celui-ci :D
-- Mettre une étoile et partager le projet :rocket:
-- [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Vous pouvez faire des dons uniques via PayPal. Je vais probablement acheter un ~~café~~ thé. :tea:
+-   Donner un crédit approprié lorsque vous utilisez github-readme-stats sur votre readme, avec un lien vers celui-ci :D
+-   Mettre une étoile et partager le projet :rocket:
+-   [![paypal.me/anuraghazra](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/anuraghazra) - Vous pouvez faire des dons uniques via PayPal. Je vais probablement acheter un ~~café~~ thé. :tea:
 
 Merci ! :heart:
 
----
+* * *
 
 [![https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss](../powered-by-vercel.svg)](https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss)
 
-
-Les contributions sont les bienvenues ! <3
+Les contributions sont les bienvenues ! &lt;3
 
 Fait avec :heart: et JavaScript.
